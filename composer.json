@@ -13,6 +13,6 @@
         }
     },
     "require": {
-        "Illuminate/Support": "~5"
+        "illuminate/support": "~5"
     }
 }
