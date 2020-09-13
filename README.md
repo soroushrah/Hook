@@ -4,7 +4,7 @@
 
 <br>
 
-Actions Hook in Laravel
+Hook in Laravel
 
 
 ## About
@@ -22,8 +22,8 @@ composer require soroushrah/action
 2. Add the service provider to the providers array in your `config/app.php`.
 
 ```php
-    'Soroush\Action\ActionServiceProvider::class',
-    'Soroush\Action\ActionBladeServiceProvider::class',
+    Soroush\Action\ActionServiceProvider::class,
+    Soroush\Action\ActionBladeServiceProvider::class,
 ```
 
 3. Add the facade in `config/app.php`
@@ -44,7 +44,7 @@ Anywhere in your code you can create a new action like so:
 \Action::action('my.hook', 'soroush');
 ```
 
-The first parameter is the name of the hook And Everything You Pass After Is Argument.
+The first parameter is the name of the hook And Everything You pass after is argument.
 
 To listen to your hooks, you attach listeners. These are best added to your `AppServiceProvider` `boot()` method.
 
