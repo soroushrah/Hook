@@ -71,7 +71,7 @@ Adding the same action as the one in the action example above:
 
 ### Add Daynamic Relation Models
 
-For add some relation on modles are not in your module you should use HasDynamicRelation trait in your all project model : 
+For add some relation on models are not in your module you should use HasDynamicRelation trait in your all project model : 
 
 ```
 class MyModel extends Model {
