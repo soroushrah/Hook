@@ -69,5 +69,24 @@ Adding the same action as the one in the action example above:
 @action('my.hook', 'awesome')
 ```
 
+### Add Daynamic Relation Models
+
+For add some relation on modles are not in your module you should use HasDynamicRelation trait in your all project model : 
+
+```
+class MyModel extends Model {
+    use HasDynamicRelation;
+}
+```
+
+Then add dynamic relation like example above on providers :
+
+```
+MyModel::addDynamicRelation('some_relation', function(MyModel $model) {
+    return $model->hasMany(SomeRelatedModel::class);
+});
+```
+
+
 ## Credits
 - Created by Soroush Rahmani
